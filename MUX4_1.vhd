@@ -10,7 +10,7 @@ entity MUX4_1 is
 		sig_B: in std_logic;
 		sig_C: in std_logic;
 		sig_D: in std_logic;
-		sig_out: out std_logic;
+		sig_out: out std_logic
 	    );
 end MUX4_1;
 
