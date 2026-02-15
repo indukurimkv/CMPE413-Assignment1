@@ -21,5 +21,4 @@ architecture ALU_TB_SIM of ALU_TB is
         );
     end alu_4;
 begin
-
 end ALU_TB_SIM;
