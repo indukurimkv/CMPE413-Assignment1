@@ -9,7 +9,7 @@ end ALU_TB;
 
 
 architecture ALU_TB_SIM of ALU_TB is
-    component alu_4 is
+    component alu_4
         port (
             A : in std_logic_vector(3 downto 0);
             B : in std_logic_vector(3 downto 0);
@@ -17,9 +17,9 @@ architecture ALU_TB_SIM of ALU_TB is
             S0 : in std_logic;
             S1 : in std_logic;
             G : out std_logic_vector(3 downto 0);
-            Cout : in std_logic;
+            Cout : in std_logic
         );
-    end alu_4;
+    end component;
 
     signal clock: std_logic;
 begin

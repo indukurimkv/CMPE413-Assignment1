@@ -14,7 +14,7 @@ end ADD_x4;
 
 architecture ADD_x4_A of ADD_X4 is
     signal cin_1, cin_2, cin_3: std_logic;
-    component ADD is
+    component ADD
         port(
                 sig_a: in std_logic;
                 sig_b: in std_logic;
@@ -22,10 +22,10 @@ architecture ADD_x4_A of ADD_X4 is
                 sig_c: out std_logic;
                 cout: out std_logic
         );
-    end component ADD;
+    end component;
 begin
-    ADD_x4_INST0 : ADD port map (sig_a(0), sig_b(0), cin, sig_g(0), cin_1);
-    ADD_x4_INST1 : ADD port map (sig_a(1), sig_b(1), cin_1, sig_g(1), cin_2);
-    ADD_x4_INST2 : ADD port map (sig_a(2), sig_b(2), cin_2, sig_g(2), cin_3);
-    ADD_x4_INST3 : ADD port map (sig_a(3), sig_b(3), cin_3, sig_g(3), cout);
+    ADD_x4_INST0 : ADD port map (sig_x(0), sig_y(0), cin, sig_g(0), cin_1);
+    ADD_x4_INST1 : ADD port map (sig_x(1), sig_y(1), cin_1, sig_g(1), cin_2);
+    ADD_x4_INST2 : ADD port map (sig_x(2), sig_y(2), cin_2, sig_g(2), cin_3);
+    ADD_x4_INST3 : ADD port map (sig_x(3), sig_y(3), cin_3, sig_g(3), cout);
 end ADD_x4_A;
