@@ -5,6 +5,7 @@
 /afs/umbc.edu/users/m/u/muralii1/home/cmpe413/lab1-assignment/ADD.vhd
 /afs/umbc.edu/users/m/u/muralii1/home/cmpe413/lab1-assignment/ADD_x4.vhd
 /afs/umbc.edu/users/m/u/muralii1/home/cmpe413/lab1-assignment/ALU4.vhd
+/afs/umbc.edu/users/m/u/muralii1/home/cmpe413/lab1-assignment/ALU_TB_STDOUT.vhd
 /afs/umbc.edu/users/m/u/muralii1/home/cmpe413/lab1-assignment/ALU_TB.vhd
 /afs/umbc.edu/users/m/u/muralii1/home/cmpe413/lab1-assignment/I4.vhd
 /afs/umbc.edu/users/m/u/muralii1/home/cmpe413/lab1-assignment/MUX4_1.vhd

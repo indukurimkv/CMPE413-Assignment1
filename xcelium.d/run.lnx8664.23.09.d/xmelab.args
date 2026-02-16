@@ -8,7 +8,7 @@
 worklib
 -no_analogsolver
 -MESSAGES
-ALU_TB:ALU_TB_SIM
+ALU_TB:ALU_TB_SIM_STDOUT
 -XLMODE
 ./xcelium.d/run.lnx8664.23.09.d
 -RUNMODE

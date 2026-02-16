@@ -2,6 +2,4 @@ include ./hdlrun.var
 DEFINE RUNMODEDEFAULT 1
 DEFINE LIB_MAP ( + => worklib )
 define ELAB_SNAPSHOT
-define SNAPSHOT worklib.alu_tb:alu_tb_sim
-DEFINE RUNMODEDEFAULT 1
-DEFINE LIB_MAP ( + => worklib )
+define SNAPSHOT worklib.alu_tb:alu_tb_sim_stdout

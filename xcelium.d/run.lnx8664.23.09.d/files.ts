@@ -5,3 +5,4 @@
 1771212474 /afs/umbc.edu/users/m/u/muralii1/home/cmpe413/lab1-assignment/I4.vhd
 1771212739 /afs/umbc.edu/users/m/u/muralii1/home/cmpe413/lab1-assignment/MUX4_1.vhd
 1771210400 /afs/umbc.edu/users/m/u/muralii1/home/cmpe413/lab1-assignment/MUX4_1_x4.vhd
+1771246289 /afs/umbc.edu/users/m/u/muralii1/home/cmpe413/lab1-assignment/ALU_TB_STDOUT.vhd

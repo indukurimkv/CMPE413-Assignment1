@@ -7,10 +7,11 @@
 -work
 worklib
 -top
-ALU_TB:ALU_TB_SIM
+ALU_TB:ALU_TB_SIM_STDOUT
 ./ADD.vhd
 ./ADD_x4.vhd
 ./ALU4.vhd
+./ALU_TB_STDOUT.vhd
 ./ALU_TB.vhd
 ./I4.vhd
 ./MUX4_1.vhd
