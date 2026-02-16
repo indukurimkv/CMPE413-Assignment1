@@ -17,12 +17,12 @@ architecture ALU_TB_SIM of ALU_TB is
             S0 : in std_logic;
             S1 : in std_logic;
             G : out std_logic_vector(3 downto 0);
-            Cout : in std_logic
+            Cout : out std_logic
         );
     end component;
 
     signal sig_A, sig_B, G: std_logic_vector(3 downto 0);
-    signal clk, Cin, S0, S1, Cout, Space: std_logic;
+    signal clk, Cin, S0, S1, Cout: std_logic;
 
 begin
     ALU_UT: alu_4 port map (
@@ -48,8 +48,9 @@ begin
         variable buf_in: line;
         variable buf_out: line;
 
-        variable sig_A_IN, sig_B_IN, G_IN: std_logic_vector(3 downto 0);
-        variable Cin_IN, S0_IN, S1_IN, Cout_IN, Space_IN: std_logic;
+        variable sig_A_IN, sig_B_IN, G_OUT: std_logic_vector(3 downto 0);
+        variable Cin_IN, S0_IN, S1_IN, Cout_OUT: std_logic;
+        variable Space_IN: character;
 
     begin
         while not (endfile(infile)) loop
@@ -64,13 +65,16 @@ begin
             read(buf_in, space_IN);
             read(buf_in, Cin_IN);
 
-            sig_A <= sig_A_IN; sig_B <= sig_B_IN; G <= G_IN;
-            Cin <= Cin_IN; S0 <= S0_IN; S1 <= S1_IN; Cout <= Cout_IN; Space <= Space_IN;
+            sig_A <= sig_A_IN; sig_B <= sig_B_IN;
+            Cin <= Cin_IN; S0 <= S0_IN; S1 <= S1_IN;
 
             wait until falling_edge(clk);
 
-            write(buf_out, G);
-            write(buf_out, Cout);
+            G_OUT := G; Cout_OUT := Cout;
+
+            write(buf_out, G_OUT);
+            write(buf_out, Space_IN);
+            write(buf_out, Cout_OUT);
             writeline(outfile, buf_out);
         end loop;
     wait;
