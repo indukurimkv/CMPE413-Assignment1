@@ -1,0 +1,14 @@
+//
+// File created by:  xrun
+// Do not modify this file
+
+s1::(15Feb2026:21:51:06):( xrun -access +rwc -work worklib -top ALU_TB:ALU_TB_SIM ./ADD.vhd ./ADD_x4.vhd ./ALU4.vhd ./ALU_TB.vhd ./I4.vhd ./MUX4_1.vhd ./MUX4_1_x4.vhd )
+s2::(15Feb2026:21:52:47):( xrun -access +rwc -work worklib -top ALU_TB:ALU_TB_SIM ./ADD.vhd ./ADD_x4.vhd ./ALU4.vhd ./ALU_TB.vhd ./I4.vhd ./MUX4_1.vhd ./MUX4_1_x4.vhd )
+s3::(15Feb2026:21:53:22):( xrun -access +rwc -work worklib -top ALU_TB:ALU_TB_SIM ./ADD.vhd ./ADD_x4.vhd ./ALU4.vhd ./ALU_TB.vhd ./I4.vhd ./MUX4_1.vhd ./MUX4_1_x4.vhd )
+s4::(15Feb2026:21:54:09):( xrun -access +rwc -work worklib -top ALU_TB:ALU_TB_SIM ./ADD.vhd ./ADD_x4.vhd ./ALU4.vhd ./ALU_TB.vhd ./I4.vhd ./MUX4_1.vhd ./MUX4_1_x4.vhd )
+s5::(15Feb2026:21:55:14):( xrun -access +rwc -work worklib -top ALU_TB:ALU_TB_SIM ./ADD.vhd ./ADD_x4.vhd ./ALU4.vhd ./ALU_TB.vhd ./I4.vhd ./MUX4_1.vhd ./MUX4_1_x4.vhd )
+s6::(15Feb2026:22:11:13):( xrun -access +rwc -work worklib -top ALU_TB:ALU_TB_SIM ./ADD.vhd ./ADD_x4.vhd ./ALU4.vhd ./ALU_TB.vhd ./I4.vhd ./MUX4_1.vhd ./MUX4_1_x4.vhd )
+s7::(15Feb2026:22:12:40):( xrun -access +rwc -work worklib -top ALU_TB:ALU_TB_SIM ./ADD.vhd ./ADD_x4.vhd ./ALU4.vhd ./ALU_TB.vhd ./I4.vhd ./MUX4_1.vhd ./MUX4_1_x4.vhd )
+s8::(15Feb2026:22:13:24):( xrun -access +rwc -work worklib -top ALU_TB:ALU_TB_SIM ./ADD.vhd ./ADD_x4.vhd ./ALU4.vhd ./ALU_TB.vhd ./I4.vhd ./MUX4_1.vhd ./MUX4_1_x4.vhd )
+s9::(15Feb2026:22:13:55):( xrun -access +rwc -work worklib -top ALU_TB:ALU_TB_SIM ./ADD.vhd ./ADD_x4.vhd ./ALU4.vhd ./ALU_TB.vhd ./I4.vhd ./MUX4_1.vhd ./MUX4_1_x4.vhd )
+s10::(15Feb2026:22:14:48):( xrun -access +rwc -work worklib -top ALU_TB:ALU_TB_SIM ./ADD.vhd ./ADD_x4.vhd ./ALU4.vhd ./ALU_TB.vhd ./I4.vhd ./MUX4_1.vhd ./MUX4_1_x4.vhd )

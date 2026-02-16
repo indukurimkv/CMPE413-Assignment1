@@ -1,0 +1,17 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-access
++rwc
+-work
+worklib
+-top
+ALU_TB:ALU_TB_SIM
+./ADD.vhd
+./ADD_x4.vhd
+./ALU4.vhd
+./ALU_TB.vhd
+./I4.vhd
+./MUX4_1.vhd
+./MUX4_1_x4.vhd

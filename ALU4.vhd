@@ -22,7 +22,8 @@ architecture structural of alu_4 is
             sig_C: in std_logic_vector(3 downto 0);
             sig_D: in std_logic_vector(3 downto 0);
             
-            sig_sel: in std_logic_vector(1 downto 0);
+            sig_S1: in std_logic;
+            sig_S0: in std_logic;
             
             sig_Y: out std_logic_vector(3 downto 0)
         );

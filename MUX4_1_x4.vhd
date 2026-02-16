@@ -11,7 +11,7 @@ entity MUX4_1_x4 is
             sig_S1: in std_logic;
             sig_S0: in std_logic;
             
-            sig_Y: out std_logic_vector(3 downto 0);
+            sig_Y: out std_logic_vector(3 downto 0)
         );
 end MUX4_1_x4;
 
