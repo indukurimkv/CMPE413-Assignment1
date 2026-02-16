@@ -1,5 +1,5 @@
 xrun(64): 23.09-s013: (c) Copyright 1995-2024 Cadence Design Systems, Inc.
-TOOL:	xrun(64)	23.09-s013: Started on Feb 15, 2026 at 22:14:48 EST
+TOOL:	xrun(64)	23.09-s013: Started on Feb 15, 2026 at 22:32:55 EST
 xrun
 	-access +rwc
 	-work worklib
@@ -18,66 +18,44 @@ xrun
 ./ALU4.vhd:
 	errors: 0, warnings: 0
 ./ALU_TB.vhd:
-            read(buf_in, S1);
-                          |
-xmvhdl_p: *E,VARPNO (./ALU_TB.vhd,59|26): actual associated with variable parameter must be a variable [2.1.1].
-            read(buf_in, space);
-                             |
-xmvhdl_p: *E,VARPNO (./ALU_TB.vhd,60|29): actual associated with variable parameter must be a variable [2.1.1].
-            read(buf_in, S0);
-                          |
-xmvhdl_p: *E,VARPNO (./ALU_TB.vhd,61|26): actual associated with variable parameter must be a variable [2.1.1].
-            read(buf_in, space);
-                             |
-xmvhdl_p: *E,VARPNO (./ALU_TB.vhd,62|29): actual associated with variable parameter must be a variable [2.1.1].
-            read(buf_in, sig_A);
-                             |
-xmvhdl_p: *E,VARPNO (./ALU_TB.vhd,63|29): actual associated with variable parameter must be a variable [2.1.1].
-            read(buf_in, space);
-                             |
-xmvhdl_p: *E,VARPNO (./ALU_TB.vhd,64|29): actual associated with variable parameter must be a variable [2.1.1].
-            read(buf_in, sig_B);
-                             |
-xmvhdl_p: *E,VARPNO (./ALU_TB.vhd,65|29): actual associated with variable parameter must be a variable [2.1.1].
-            read(buf_in, space);
-                             |
-xmvhdl_p: *E,VARPNO (./ALU_TB.vhd,66|29): actual associated with variable parameter must be a variable [2.1.1].
-            read(buf_in, Cin);
-                           |
-xmvhdl_p: *E,VARPNO (./ALU_TB.vhd,67|27): actual associated with variable parameter must be a variable [2.1.1].
-	errors: 9, warnings: 0
+	errors: 0, warnings: 0
 ./I4.vhd:
-            outBits: out std_logic_vector(3 downto 0);
-                                                       |
-xmvhdl_p: *E,PORNKW (./I4.vhd,8|55): identifier expected.
-            outBits: out std_logic_vector(3 downto 0);
-                                                       |
-xmvhdl_p: *E,MISCOL (./I4.vhd,8|55): expecting a colon (':') 87[4.3.3] 93[4.3.2].
-         );
-            |
-xmvhdl_p: *E,PORNKW (./I4.vhd,9|12): identifier expected.
-         );
-            |
-xmvhdl_p: *E,MISCOL (./I4.vhd,9|12): expecting a colon (':') 87[4.3.3] 93[4.3.2].
-end entity Inverter4;
-                    |
-xmvhdl_p: *E,EXPRIS (./I4.vhd,10|20): expecting the reserved word 'IS' [1.1].
-architecture Inverter4Basic is Inverter4 is
-                            |
-xmvhdl_p: *E,EXPROF (./I4.vhd,13|28): expecting the reserved word 'OF' [1.2].
-architecture Inverter4Basic is Inverter4 is
-                               |
-xmvhdl_p: *E,EXPBEG (./I4.vhd,13|31): expecting the reserved word 'BEGIN' [1.2].
-architecture Inverter4Basic is Inverter4 is
-                                         |
-xmvhdl_p: *E,UNKCCS (./I4.vhd,13|41): unknown concurrent statement [9].
-	errors: 8, warnings: 0
+	errors: 0, warnings: 0
 ./MUX4_1.vhd:
-    sig_out <= ((not sig_sel1) and (not sig_sel2) and sig_A) or (((not sig_sel1) and sig_sel2) and sig_B) or (sig_sel1 and (not sig_sel2) and sig_C) or sig_D;
-                                               |
-xmvhdl_p: *E,IDENTU (./MUX4_1.vhd,21|47): identifier (SIG_SEL2) is not declared [10.3].
-	errors: 1, warnings: 0
+	errors: 0, warnings: 0
 ./MUX4_1_x4.vhd:
 	errors: 0, warnings: 0
-xrun: *E,VHLERR: Error during parsing VHDL file (status 1), exiting.
-TOOL:	xrun(64)	23.09-s013: Exiting on Feb 15, 2026 at 22:14:48 EST  (total: 00:00:00)
+WORKLIB.ADD (entity):
+	streams: 6, words: 103
+WORKLIB.ADD:ADD_A (architecture):
+	streams: 1, words: 195
+WORKLIB.ADD_X4 (entity):
+	streams: 9, words: 892
+WORKLIB.ADD_X4:ADD_X4_A (architecture):
+	streams: 1, words: 325
+WORKLIB.ALU_4 (entity):
+	streams: 11, words: 908
+WORKLIB.ALU_4:STRUCTURAL (architecture):
+	streams: 1, words: 2895
+WORKLIB.ALU_TB (entity):
+	streams: 1, words: 63
+WORKLIB.ALU_TB:ALU_TB_SIM (architecture):
+	streams: 1, words: 2190
+WORKLIB.INVERTER4 (entity):
+	streams: 5, words: 605
+WORKLIB.INVERTER4:INVERTER4BASIC (architecture):
+	streams: 1, words: 195
+WORKLIB.MUX4_1 (entity):
+	streams: 8, words: 119
+WORKLIB.MUX4_1:MUX4_1_A (architecture):
+	streams: 1, words: 195
+WORKLIB.MUX4_1_X4 (entity):
+	streams: 13, words: 1434
+WORKLIB.MUX4_1_X4:MUX4_1_X4_A (architecture):
+	streams: 1, words: 325
+	Elaborating the design hierarchy:
+xmelab: *E,CUCPMD: inappropriate modes over port association: ALU_4.COUT [1.1.1.2].
+xmelab: *W,CUDEFF: default binding failed for component instance (:ALU_TB(ALU_TB_SIM):ALU_UT) with design unit (WORKLIB.ALU_4:STRUCTURAL) because of the above mentioned reason.
+xmelab: *W,CUNOTB: component instance is not fully bound (:ALU_TB(ALU_TB_SIM):ALU_UT) [File:ALU_TB.vhd, Line:28].
+xrun: *E,ELBERR: Error (*E) or soft error (*SE) occurred during elaboration (status 1), exiting.
+TOOL:	xrun(64)	23.09-s013: Exiting on Feb 15, 2026 at 22:32:58 EST  (total: 00:00:03)

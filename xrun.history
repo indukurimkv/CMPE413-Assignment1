@@ -8,3 +8,8 @@ s7(15Feb2026:22:12:40):  xrun -access +rwc -work worklib -top ALU_TB:ALU_TB_SIM 
 s8(15Feb2026:22:13:24):  xrun -access +rwc -work worklib -top ALU_TB:ALU_TB_SIM ./ADD.vhd ./ADD_x4.vhd ./ALU4.vhd ./ALU_TB.vhd ./I4.vhd ./MUX4_1.vhd ./MUX4_1_x4.vhd 
 s9(15Feb2026:22:13:55):  xrun -access +rwc -work worklib -top ALU_TB:ALU_TB_SIM ./ADD.vhd ./ADD_x4.vhd ./ALU4.vhd ./ALU_TB.vhd ./I4.vhd ./MUX4_1.vhd ./MUX4_1_x4.vhd 
 s10(15Feb2026:22:14:48):  xrun -access +rwc -work worklib -top ALU_TB:ALU_TB_SIM ./ADD.vhd ./ADD_x4.vhd ./ALU4.vhd ./ALU_TB.vhd ./I4.vhd ./MUX4_1.vhd ./MUX4_1_x4.vhd 
+s11(15Feb2026:22:26:49):  xrun -access +rwc -work worklib -top ALU_TB:ALU_TB_SIM ./ADD.vhd ./ADD_x4.vhd ./ALU4.vhd ./ALU_TB.vhd ./I4.vhd ./MUX4_1.vhd ./MUX4_1_x4.vhd 
+s12(15Feb2026:22:27:19):  xrun -access +rwc -work worklib -top ALU_TB:ALU_TB_SIM ./ADD.vhd ./ADD_x4.vhd ./ALU4.vhd ./ALU_TB.vhd ./I4.vhd ./MUX4_1.vhd ./MUX4_1_x4.vhd 
+s13(15Feb2026:22:27:39):  xrun -access +rwc -work worklib -top ALU_TB:ALU_TB_SIM ./ADD.vhd ./ADD_x4.vhd ./ALU4.vhd ./ALU_TB.vhd ./I4.vhd ./MUX4_1.vhd ./MUX4_1_x4.vhd 
+s14(15Feb2026:22:27:57):  xrun -access +rwc -work worklib -top ALU_TB:ALU_TB_SIM ./ADD.vhd ./ADD_x4.vhd ./ALU4.vhd ./ALU_TB.vhd ./I4.vhd ./MUX4_1.vhd ./MUX4_1_x4.vhd 
+s15(15Feb2026:22:32:55):  xrun -access +rwc -work worklib -top ALU_TB:ALU_TB_SIM ./ADD.vhd ./ADD_x4.vhd ./ALU4.vhd ./ALU_TB.vhd ./I4.vhd ./MUX4_1.vhd ./MUX4_1_x4.vhd 
