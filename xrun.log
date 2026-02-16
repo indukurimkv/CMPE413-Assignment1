@@ -1,5 +1,5 @@
 xrun(64): 23.09-s013: (c) Copyright 1995-2024 Cadence Design Systems, Inc.
-TOOL:	xrun(64)	23.09-s013: Started on Feb 15, 2026 at 22:44:03 EST
+TOOL:	xrun(64)	23.09-s013: Started on Feb 15, 2026 at 22:48:57 EST
 xrun
 	-access +rwc
 	-work worklib
@@ -11,38 +11,9 @@ xrun
 	./I4.vhd
 	./MUX4_1.vhd
 	./MUX4_1_x4.vhd
-Recompiling... reason: file './ALU_TB.vhd' is newer than expected.
-	expected: Sun Feb 15 22:41:44 2026
-	actual:   Sun Feb 15 22:44:00 2026
-./ALU_TB.vhd:
-	errors: 0, warnings: 0
-WORKLIB.ALU_TB:ALU_TB_SIM (architecture):
-	streams: 1, words: 2187
-	Elaborating the design hierarchy:
-xmelab: *W,CUDEFB: default binding occurred for component instance (:ALU_TB(ALU_TB_SIM):ALU_UT) with design unit (WORKLIB.ALU_4:STRUCTURAL).
-xmelab: *W,CUDEFB: default binding occurred for component instance (:ALU_TB(ALU_TB_SIM):ALU_UT@alu_4(structural):B_inverter) with design unit (WORKLIB.INVERTER4:INVERTER4BASIC).
-xmelab: *W,CUDEFB: default binding occurred for component instance (:ALU_TB(ALU_TB_SIM):ALU_UT@alu_4(structural):Y_MUX) with design unit (WORKLIB.MUX4_1_X4:MUX4_1_X4_A).
-xmelab: *W,CUDEFB: default binding occurred for component instance (:ALU_TB(ALU_TB_SIM):ALU_UT@alu_4(structural):Y_MUX@MUX4_1_x4(MUX4_1_x4_A):sig_Y0) with design unit (WORKLIB.MUX4_1:MUX4_1_A).
-xmelab: *W,CUDEFB: default binding occurred for component instance (:ALU_TB(ALU_TB_SIM):ALU_UT@alu_4(structural):Y_MUX@MUX4_1_x4(MUX4_1_x4_A):sig_Y1) with design unit (WORKLIB.MUX4_1:MUX4_1_A).
-xmelab: *W,CUDEFB: default binding occurred for component instance (:ALU_TB(ALU_TB_SIM):ALU_UT@alu_4(structural):Y_MUX@MUX4_1_x4(MUX4_1_x4_A):sig_Y2) with design unit (WORKLIB.MUX4_1:MUX4_1_A).
-xmelab: *W,CUDEFB: default binding occurred for component instance (:ALU_TB(ALU_TB_SIM):ALU_UT@alu_4(structural):Y_MUX@MUX4_1_x4(MUX4_1_x4_A):sig_Y3) with design unit (WORKLIB.MUX4_1:MUX4_1_A).
-xmelab: *W,CUDEFB: default binding occurred for component instance (:ALU_TB(ALU_TB_SIM):ALU_UT@alu_4(structural):ADD_Main) with design unit (WORKLIB.ADD_X4:ADD_X4_A).
-xmelab: *W,CUDEFB: default binding occurred for component instance (:ALU_TB(ALU_TB_SIM):ALU_UT@alu_4(structural):ADD_Main@ADD_x4(ADD_x4_A):ADD_x4_INST0) with design unit (WORKLIB.ADD:ADD_A).
-xmelab: *W,CUDEFB: default binding occurred for component instance (:ALU_TB(ALU_TB_SIM):ALU_UT@alu_4(structural):ADD_Main@ADD_x4(ADD_x4_A):ADD_x4_INST1) with design unit (WORKLIB.ADD:ADD_A).
-xmelab: *W,CUDEFB: default binding occurred for component instance (:ALU_TB(ALU_TB_SIM):ALU_UT@alu_4(structural):ADD_Main@ADD_x4(ADD_x4_A):ADD_x4_INST2) with design unit (WORKLIB.ADD:ADD_A).
-xmelab: *W,CUDEFB: default binding occurred for component instance (:ALU_TB(ALU_TB_SIM):ALU_UT@alu_4(structural):ADD_Main@ADD_x4(ADD_x4_A):ADD_x4_INST3) with design unit (WORKLIB.ADD:ADD_A).
-	Top level design units:
-		:alu_tb(alu_tb_sim):
-	Building instance specific data structures.
-	Design hierarchy summary:
-		            Instances  Unique
-		Components:        14       7
-		Default bindings:  12       6
-		Processes:         20      11
-		Signals:           15      15
-	Writing initial simulation snapshot: WORKLIB.ALU_TB:ALU_TB_SIM
 Loading snapshot worklib.alu_tb:alu_tb_sim .................... Done
 xcelium> run
-Simulation interrupted at 522569250 NS + 0
+std.env.finish invoked from ALU_TB.vhd, line: 81, pos: 13
+Simulation complete via std.env.finish(1) at time 80 NS + 1
 xcelium> exit
-TOOL:	xrun(64)	23.09-s013: Exiting on Feb 15, 2026 at 22:44:08 EST  (total: 00:00:05)
+TOOL:	xrun(64)	23.09-s013: Exiting on Feb 15, 2026 at 22:48:58 EST  (total: 00:00:01)

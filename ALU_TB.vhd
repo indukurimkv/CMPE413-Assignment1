@@ -2,6 +2,7 @@ library IEEE;
 use ieee.std_logic_1164.all;
 use STD.textio.all;
 use ieee.std_logic_textio.all;
+use std.env.all;
 
 
 entity ALU_TB is
@@ -77,6 +78,6 @@ begin
             write(buf_out, Cout_OUT);
             writeline(outfile, buf_out);
         end loop;
-    wait;
+        finish;
 end process;
 end ALU_TB_SIM;
