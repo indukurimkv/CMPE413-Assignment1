@@ -56,25 +56,3 @@ begin
     Y_MUX: MUX4_1_x4 port map (bus_low, B, B_n, bus_high, S1, S0, sig_Y);
     ADD_Main: ADD_x4 port map(A, sig_Y, Cin, G, Cout);
 end structural;
-
-architecture behavioral of alu_4 is
-    component Inverter4
-        port(
-            inBits: in std_logic_vector(3 downto 0);
-            outBits: out std_logic_vector(3 downto 0)
-        );
-    end component;
-    signal B_n: std_logic_vector(3 downto 0);
-    signal buf: std_logic_vector(4 downto 0);
-    signal sel: std_logic_vector(1 downto 0);
-begin
-    B_invert: Inverter4 port map (B, B_n);
-    sel <= S1 & S0;
-    with sel select
-        buf <= A+std_logic_vector(Cin) when "00",
-               A + B + Cin when "01",
-               A + B_n + Cin when "10",
-               A + "1111" + Cin when "11",
-               "0000" when others;
-    (Cout, G) <= buf;
-end behavioral;
