@@ -1,9 +1,9 @@
 xrun(64): 23.09-s013: (c) Copyright 1995-2024 Cadence Design Systems, Inc.
-TOOL:	xrun(64)	23.09-s013: Started on Feb 16, 2026 at 08:12:36 EST
+TOOL:	xrun(64)	23.09-s013: Started on Feb 16, 2026 at 21:18:39 EST
 xrun
 	-access +rwc
 	-work worklib
-	-top ALU_TB:ALU_TB_SIM_STDOUT
+	-top ALU_TB:ALU_TB_SIM
 	./ADD.vhd
 	./ADD_x4.vhd
 	./ALU4.vhd
@@ -12,17 +12,30 @@ xrun
 	./I4.vhd
 	./MUX4_1.vhd
 	./MUX4_1_x4.vhd
-Loading snapshot worklib.alu_tb:alu_tb_sim_stdout .................... Done
-xcelium> run
-0111 0
-1000 0
-1101 0
-1110 0
-0000 1
-0001 1
-0110 1
-0111 1
-std.env.finish invoked from ALU_TB_STDOUT.vhd, line: 79, pos: 13
-Simulation complete via std.env.finish(1) at time 80 NS + 1
-xcelium> exit
-TOOL:	xrun(64)	23.09-s013: Exiting on Feb 16, 2026 at 08:12:37 EST  (total: 00:00:01)
+./ALU4.vhd:
+        buf <= A+std_logic_vector(Cin) when "00",
+                                    |
+xmvhdl_p: *E,DIMNMM (./ALU4.vhd,74|36): dimension mismatch in type conversion between target type and operand type.
+        buf <= A+std_logic_vector(Cin) when "00",
+                                |
+xmvhdl_p: *E,APNPFX (./ALU4.vhd,74|32): cannot interpret prefix (STD_LOGIC_VECTOR) for the construct used here.
+               A + B + Cin when "01",
+                 |
+xmvhdl_p: *E,OPTYMM (./ALU4.vhd,75|17): operator argument type mismatch 87[4.3.3.2] 93[4.3.2.2] [7.2] [10.5].
+               A + B_n + Cin when "10",
+                 |
+xmvhdl_p: *E,OPTYMM (./ALU4.vhd,76|17): operator argument type mismatch 87[4.3.3.2] 93[4.3.2.2] [7.2] [10.5].
+               A + "1111" + Cin when "11",
+                 |
+xmvhdl_p: *E,OPTYMM (./ALU4.vhd,77|17): operator argument type mismatch 87[4.3.3.2] 93[4.3.2.2] [7.2] [10.5].
+               "0000" when others;
+                    |
+xmvhdl_p: *W,ARSHMM (./ALU4.vhd,78|20): array shape mismatch [7.2.2][7.3.5].
+    (Cout, G) <= buf;
+           |
+xmvhdl_p: *E,EXPTYP (./ALU4.vhd,79|11): expecting an expression of type STD_LOGIC_VECTOR [7.3.2].
+	errors: 6, warnings: 1
+./ALU_TB.vhd:
+	errors: 0, warnings: 0
+xrun: *E,VHLERR: Error during parsing VHDL file (status 1), exiting.
+TOOL:	xrun(64)	23.09-s013: Exiting on Feb 16, 2026 at 21:18:39 EST  (total: 00:00:00)

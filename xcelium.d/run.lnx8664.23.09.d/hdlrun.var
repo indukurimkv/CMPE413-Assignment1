@@ -86,7 +86,3 @@ define VIEW_MAP ( $VIEW_MAP \
 , .svms => svms \
 , .SVMS => SVMS \
 )
-define ELAB_SNAPSHOT
-define SNAPSHOT worklib.alu_tb:alu_tb_sim_stdout
-define ELAB_SNAPSHOT
-define SNAPSHOT worklib.alu_tb:alu_tb_sim_stdout

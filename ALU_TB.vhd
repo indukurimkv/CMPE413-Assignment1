@@ -53,6 +53,38 @@ begin
         variable Cin_IN, S0_IN, S1_IN, Cout_OUT: std_logic;
         variable Space_IN: character;
 
+        procedure printSignals(
+            A_p, B_p: in std_logic_vector(3 downto 0);
+            Cin_p, S1_p, S0_p: in std_logic;
+            G_p: in std_logic_vector(3 downto 0);
+            Cout_p: in std_logic;
+            outfile: out text
+        ) is
+            variable buf: line;
+            variable G_cr: std_logic_vector(3 downto 0);
+            variable Cout_cr: std_logic_vector(3 downto 0);
+        begin
+            write(buf, string'("----------------"));
+            writeline(outfile, buf);
+            write(buf, string'("A="));
+            write(buf, A_p);
+            write(buf, string'(", B="));
+            write(buf, B_p);
+            write(buf, string'(", Cin="));
+            write(buf, Cin_p);
+            write(buf, string'(", S1="));
+            write(buf, S1_p);
+            write(buf, string'(", S0="));
+            write(buf, S0_p);
+            writeline(outfile, buf);
+            write(buf, string'("G="));
+            write(buf, G_p);
+            write(buf, string'(", Cout="));
+            write(buf, Cout_p);
+            writeline(outfile, buf);
+        end printSignals;
+
+
     begin
         while not (endfile(infile)) loop
             readline(infile, buf_in);
@@ -73,10 +105,7 @@ begin
 
             G_OUT := G; Cout_OUT := Cout;
 
-            write(buf_out, G_OUT);
-            write(buf_out, Space_IN);
-            write(buf_out, Cout_OUT);
-            writeline(outfile, buf_out);
+            printSignals(sig_A, sig_B, Cin, S0, S1, G_OUT, Cout_OUT, outfile);
         end loop;
         finish;
 end process;
