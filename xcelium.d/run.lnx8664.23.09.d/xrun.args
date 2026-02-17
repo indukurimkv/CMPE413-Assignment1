@@ -7,7 +7,7 @@
 -work
 worklib
 -top
-ALU_TB:ALU_TB_SIM_STDOUT
+ALU_TB:ALU_TB_SIM
 ./ADD.vhd
 ./ADD_x4.vhd
 ./ALU4.vhd

@@ -84,3 +84,5 @@ s79::(16Feb2026:21:30:00):( xrun -access +rwc -work worklib -top ALU_TB_STDOUT:A
 s80::(16Feb2026:21:30:05):( xrun -access +rwc -work worklib -top ALU_TB_STDOUT:ALU_TB_SIM_STDOUT ./ADD.vhd ./ADD_x4.vhd ./ALU4.vhd ./ALU_TB_STDOUT.vhd ./ALU_TB.vhd ./I4.vhd ./MUX4_1.vhd ./MUX4_1_x4.vhd )
 s81::(16Feb2026:21:30:19):( xrun -access +rwc -work worklib -top ALU_TB_STDOUT:ALU_TB_SIM_STDOUT ./ADD.vhd ./ADD_x4.vhd ./ALU4.vhd ./ALU_TB_STDOUT.vhd ./ALU_TB.vhd ./I4.vhd ./MUX4_1.vhd ./MUX4_1_x4.vhd )
 s82::(16Feb2026:21:30:55):( xrun -access +rwc -work worklib -top ALU_TB:ALU_TB_SIM_STDOUT ./ADD.vhd ./ADD_x4.vhd ./ALU4.vhd ./ALU_TB_STDOUT.vhd ./ALU_TB.vhd ./I4.vhd ./MUX4_1.vhd ./MUX4_1_x4.vhd )
+s83::(16Feb2026:21:48:15):( xrun -access +rwc -work worklib -top ALU_TB:ALU_TB_SIM_STDOUT ./ADD.vhd ./ADD_x4.vhd ./ALU4.vhd ./ALU_TB_STDOUT.vhd ./ALU_TB.vhd ./I4.vhd ./MUX4_1.vhd ./MUX4_1_x4.vhd )
+s84::(16Feb2026:21:48:22):( xrun -access +rwc -work worklib -top ALU_TB:ALU_TB_SIM ./ADD.vhd ./ADD_x4.vhd ./ALU4.vhd ./ALU_TB_STDOUT.vhd ./ALU_TB.vhd ./I4.vhd ./MUX4_1.vhd ./MUX4_1_x4.vhd )
