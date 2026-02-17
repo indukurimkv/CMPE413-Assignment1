@@ -1,9 +1,9 @@
 xrun(64): 23.09-s013: (c) Copyright 1995-2024 Cadence Design Systems, Inc.
-TOOL:	xrun(64)	23.09-s013: Started on Feb 16, 2026 at 21:18:39 EST
+TOOL:	xrun(64)	23.09-s013: Started on Feb 16, 2026 at 21:30:54 EST
 xrun
 	-access +rwc
 	-work worklib
-	-top ALU_TB:ALU_TB_SIM
+	-top ALU_TB:ALU_TB_SIM_STDOUT
 	./ADD.vhd
 	./ADD_x4.vhd
 	./ALU4.vhd
@@ -12,30 +12,56 @@ xrun
 	./I4.vhd
 	./MUX4_1.vhd
 	./MUX4_1_x4.vhd
-./ALU4.vhd:
-        buf <= A+std_logic_vector(Cin) when "00",
-                                    |
-xmvhdl_p: *E,DIMNMM (./ALU4.vhd,74|36): dimension mismatch in type conversion between target type and operand type.
-        buf <= A+std_logic_vector(Cin) when "00",
-                                |
-xmvhdl_p: *E,APNPFX (./ALU4.vhd,74|32): cannot interpret prefix (STD_LOGIC_VECTOR) for the construct used here.
-               A + B + Cin when "01",
-                 |
-xmvhdl_p: *E,OPTYMM (./ALU4.vhd,75|17): operator argument type mismatch 87[4.3.3.2] 93[4.3.2.2] [7.2] [10.5].
-               A + B_n + Cin when "10",
-                 |
-xmvhdl_p: *E,OPTYMM (./ALU4.vhd,76|17): operator argument type mismatch 87[4.3.3.2] 93[4.3.2.2] [7.2] [10.5].
-               A + "1111" + Cin when "11",
-                 |
-xmvhdl_p: *E,OPTYMM (./ALU4.vhd,77|17): operator argument type mismatch 87[4.3.3.2] 93[4.3.2.2] [7.2] [10.5].
-               "0000" when others;
-                    |
-xmvhdl_p: *W,ARSHMM (./ALU4.vhd,78|20): array shape mismatch [7.2.2][7.3.5].
-    (Cout, G) <= buf;
-           |
-xmvhdl_p: *E,EXPTYP (./ALU4.vhd,79|11): expecting an expression of type STD_LOGIC_VECTOR [7.3.2].
-	errors: 6, warnings: 1
-./ALU_TB.vhd:
-	errors: 0, warnings: 0
-xrun: *E,VHLERR: Error during parsing VHDL file (status 1), exiting.
-TOOL:	xrun(64)	23.09-s013: Exiting on Feb 16, 2026 at 21:18:39 EST  (total: 00:00:00)
+	Elaborating the design hierarchy:
+xmelab: *W,CUDEFB: default binding occurred for component instance (:ALU_TB(ALU_TB_SIM_STDOUT):ALU_UT) with design unit (WORKLIB.ALU_4:STRUCTURAL).
+xmelab: *W,CUDEFB: default binding occurred for component instance (:ALU_TB(ALU_TB_SIM_STDOUT):ALU_UT@alu_4(structural):B_inverter) with design unit (WORKLIB.INVERTER4:INVERTER4BASIC).
+xmelab: *W,CUDEFB: default binding occurred for component instance (:ALU_TB(ALU_TB_SIM_STDOUT):ALU_UT@alu_4(structural):Y_MUX) with design unit (WORKLIB.MUX4_1_X4:MUX4_1_X4_A).
+xmelab: *W,CUDEFB: default binding occurred for component instance (:ALU_TB(ALU_TB_SIM_STDOUT):ALU_UT@alu_4(structural):Y_MUX@MUX4_1_x4(MUX4_1_x4_A):sig_Y0) with design unit (WORKLIB.MUX4_1:MUX4_1_A).
+xmelab: *W,CUDEFB: default binding occurred for component instance (:ALU_TB(ALU_TB_SIM_STDOUT):ALU_UT@alu_4(structural):Y_MUX@MUX4_1_x4(MUX4_1_x4_A):sig_Y1) with design unit (WORKLIB.MUX4_1:MUX4_1_A).
+xmelab: *W,CUDEFB: default binding occurred for component instance (:ALU_TB(ALU_TB_SIM_STDOUT):ALU_UT@alu_4(structural):Y_MUX@MUX4_1_x4(MUX4_1_x4_A):sig_Y2) with design unit (WORKLIB.MUX4_1:MUX4_1_A).
+xmelab: *W,CUDEFB: default binding occurred for component instance (:ALU_TB(ALU_TB_SIM_STDOUT):ALU_UT@alu_4(structural):Y_MUX@MUX4_1_x4(MUX4_1_x4_A):sig_Y3) with design unit (WORKLIB.MUX4_1:MUX4_1_A).
+xmelab: *W,CUDEFB: default binding occurred for component instance (:ALU_TB(ALU_TB_SIM_STDOUT):ALU_UT@alu_4(structural):ADD_Main) with design unit (WORKLIB.ADD_X4:ADD_X4_A).
+xmelab: *W,CUDEFB: default binding occurred for component instance (:ALU_TB(ALU_TB_SIM_STDOUT):ALU_UT@alu_4(structural):ADD_Main@ADD_x4(ADD_x4_A):ADD_x4_INST0) with design unit (WORKLIB.ADD:ADD_A).
+xmelab: *W,CUDEFB: default binding occurred for component instance (:ALU_TB(ALU_TB_SIM_STDOUT):ALU_UT@alu_4(structural):ADD_Main@ADD_x4(ADD_x4_A):ADD_x4_INST1) with design unit (WORKLIB.ADD:ADD_A).
+xmelab: *W,CUDEFB: default binding occurred for component instance (:ALU_TB(ALU_TB_SIM_STDOUT):ALU_UT@alu_4(structural):ADD_Main@ADD_x4(ADD_x4_A):ADD_x4_INST2) with design unit (WORKLIB.ADD:ADD_A).
+xmelab: *W,CUDEFB: default binding occurred for component instance (:ALU_TB(ALU_TB_SIM_STDOUT):ALU_UT@alu_4(structural):ADD_Main@ADD_x4(ADD_x4_A):ADD_x4_INST3) with design unit (WORKLIB.ADD:ADD_A).
+	Top level design units:
+		:alu_tb(alu_tb_sim_stdout):
+	Building instance specific data structures.
+	Design hierarchy summary:
+		            Instances  Unique
+		Components:        14       7
+		Default bindings:  12       6
+		Processes:         20      11
+		Signals:           15      15
+	Writing initial simulation snapshot: WORKLIB.ALU_TB:ALU_TB_SIM_STDOUT
+Loading snapshot worklib.alu_tb:alu_tb_sim_stdout .................... Done
+xcelium> run
+----------------
+A=0111, B=0110, Cin=0, S1=0, S0=0
+G=0111, Cout=0
+----------------
+A=0111, B=0110, Cin=1, S1=0, S0=0
+G=1000, Cout=0
+----------------
+A=0111, B=0110, Cin=0, S1=1, S0=0
+G=1101, Cout=0
+----------------
+A=0111, B=0110, Cin=1, S1=1, S0=0
+G=1110, Cout=0
+----------------
+A=0111, B=0110, Cin=0, S1=0, S0=1
+G=0000, Cout=1
+----------------
+A=0111, B=0110, Cin=1, S1=0, S0=1
+G=0001, Cout=1
+----------------
+A=0111, B=0110, Cin=0, S1=1, S0=1
+G=0110, Cout=1
+----------------
+A=0111, B=0110, Cin=1, S1=1, S0=1
+G=0111, Cout=1
+std.env.finish invoked from ALU_TB_STDOUT.vhd, line: 106, pos: 13
+Simulation complete via std.env.finish(1) at time 80 NS + 1
+xcelium> exit
+TOOL:	xrun(64)	23.09-s013: Exiting on Feb 16, 2026 at 21:30:56 EST  (total: 00:00:02)
