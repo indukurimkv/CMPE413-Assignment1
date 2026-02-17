@@ -12,6 +12,7 @@ end Inverter4;
 
 architecture Inverter4Basic of Inverter4 is
 begin
+    -- invert each of the four bits
     outBits(0) <= not inBits(0);
     outBits(1) <= not inBits(1);
     outBits(2) <= not inBits(2);
